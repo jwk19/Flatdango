@@ -1,0 +1,111 @@
+/* Color Palette */
+:root {
+    --primary-color: #4a90e2; /* Blue */
+    --secondary-color: #f5a623; /* Orange */
+    --background-color: #f4f4f4; /* Light Grey */
+    --text-color: #333333; /* Dark Grey */
+    --button-color: #4a90e2; /* Blue */
+    --button-text-color: #ffffff; /* White */
+}
+/*Center body content*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+#container {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+section {
+    margin-top: 20px;
+}
+
+#h2 h2 {
+    color: var(--secondary-color);
+}
+/*Catalog container*/
+#movieWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#movieList {
+    flex: 1;
+    margin-right: 20px;
+}
+/*Movie list styling*/
+#films {
+    list-style-type: none;
+    padding: 0;
+}
+/*Single movie item on the menu*/
+.film-item {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*Movie details wrapper*/
+#movieDetail {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Poster display container*/
+.poster {
+    width: 150px;
+    height: 200px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/*Poster image*/
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/*Description text*/
+.details p {
+    margin: 5px 0;
+}
+/*Buy Ticket Button*/
+#buyTicket {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/*When cursor is hovered on buy ticket button*/
+#buyTicket:hover {
+    background-color: var(--secondary-color);
+}
